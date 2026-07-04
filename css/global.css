@@ -31,6 +31,11 @@
   /* Закругления */
   --border-radius-sm: 8px;
   --border-radius-lg: 24px;
+
+  /* Высота строки */
+  --line-height-2xl: 40px;
+  --line-height-3xl: 48px;
+  --line-height-base: 24px;
 }
 
 * {
@@ -220,13 +225,13 @@ a {
 .footer {
   background-color: #0b284b;
   color: var(--color-white);
+  padding: 32px 16px;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 16px;
   font-size: 16px;
   line-height: 24px;
 }
@@ -238,8 +243,8 @@ a {
   margin: 0;
 }
 
-@media (max-width: 670px) {
+/* @media (max-width: 670px) {
   .footer-content {
     padding: var(--spacing-lg) var(--spacing-base);
   }
-}
+} */
