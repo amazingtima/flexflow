@@ -136,6 +136,10 @@ a {
   padding-left: 0; */
 }
 
+.nav__link--active {
+  color: var(--color-primary);
+}
+
 .header-actions {
   flex-basis: 25%;
 }
