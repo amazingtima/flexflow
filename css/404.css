@@ -25,6 +25,10 @@
   align-items: center;
 }
 
+.button button--primary {
+  cursor: pointer;
+}
+
 @media (max-width: 400px) {
   .error-404 {
     padding: 175px var(--spacing-base);
