@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/company.css" />
   </head>
   <body>
     <header class="header">
@@ -36,7 +36,9 @@
               <li><a href="index.html">Главная</a></li>
               <li><a href="prices.html">Цены</a></li>
               <li><a href="blog.html">Блог</a></li>
-              <li><a href="company.html">О компании</a></li>
+              <li>
+                <a class="nav__link--active" href="company.html">О компании</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -47,8 +49,10 @@
           <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="prices.html">Цены</a></li>
-            <li><a class="nav__link--active" href="blog.html">Блог</a></li>
-            <li><a href="company.html">О компании</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li>
+              <a class="nav__link--active" href="company.html">О компании</a>
+            </li>
           </ul>
         </nav>
         <div class="header-actions">
@@ -107,114 +111,58 @@
       </div>
     </header>
     <main>
-      <section class="our-blog">
-        <div class="our-blog__content container">
-          <h1 class="our-blog__title">Наш блог</h1>
-          <p class="our-blog__description">
+      <section class="about-company">
+        <div class="about-company__content container">
+          <h1 class="about-company__title">О компании</h1>
+          <p class="about-company__description">
             Здесь мы делимся полезными знаниями и новостями компании.
           </p>
-          <div class="our-blog__actions">
-            <button class="button button--secondary">Об IT</button>
-            <button class="button button--secondary">Новости компании</button>
-            <button class="button button--secondary">Полезные знания</button>
-            <button class="button button--secondary">Про маркетинг</button>
-            <button class="button button--secondary">Про дизайн</button>
-            <button class="button button--secondary">Про разработку</button>
-          </div>
         </div>
       </section>
 
-      <section class="blog-posts">
-        <div class="blog-posts__content container">
-          <div class="blog-card">
-            <img
-              src="images/useful-information.png"
-              alt="useful information"
-              class="blog-card__image"
-            />
-            <div class="blog-card__categories">
-              <span class="blog-card__category">Полезные знания</span>
-            </div>
-            <h2 class="blog-card__subtitle">
-              Как выбрать подходящую платформу для мобильного приложения?
-            </h2>
-            <p class="blog-card__description">
-              Выбор платформы для мобильного приложения может оказаться сложной
-              задачей. В этом посте мы рассмотрим плюсы и минусы различных
-              платформ, включая нативную и кроссплатформенную разработку. Мы
-              поделимся советами, как определить идеальный вариант для вашего
-              проекта, исходя из целевой аудитории и бюджета.
+      <section class="company-stats">
+        <div class="company-stats__content container">
+          <h2 class="visually-hidden">Статистика компании</h2>
+          <div class="company-stats__info">
+            <p class="company-stats__description">
+              Мы команда единомышленников, объединенных страстью к технологиям.
+              Мы разрабатываем дизайны и приложения, которые не просто
+              привлекают внимание, но и решают реальные задачи бизнеса. Вместе
+              мы воплотим вашу идею в жизни, создавая продукт, который будет
+              работать на вас.
             </p>
-            <p class="blog-card__date">21.11.2024</p>
+            <ul class="company-stats__list">
+              <li class="company-stats__item">
+                <p class="company-stats__title">8 лет</p>
+                <p class="company-stats__text">
+                  помогаем разрабатывать инновационные IT решения
+                </p>
+              </li>
+              <li class="company-stats__item">
+                <p class="company-stats__title">80+ клиентов</p>
+                <p class="company-stats__text">
+                  среди которых 90% возвращаются к нам снова
+                </p>
+              </li>
+              <li class="company-stats__item">
+                <p class="company-stats__title">4 офиса</p>
+                <p class="company-stats__text">
+                  в ежедневном режиме работают по всей стране
+                </p>
+              </li>
+              <li class="company-stats__item">
+                <p class="company-stats__title">30+ наград</p>
+                <p class="company-stats__text">
+                  получили наши проекты на международных конкурсах
+                </p>
+              </li>
+            </ul>
           </div>
-          <div class="blog-card">
-            <img
-              src="images/interface-design-trends.png"
-              alt="useful information"
-              class="blog-card__image"
-            />
-            <div class="blog-card__categories">
-              <span class="blog-card__category">Про дизайн</span>
-            </div>
-            <h2 class="blog-card__subtitle">
-              Тренды в дизайне интерфейсов в 2024 году
-            </h2>
-            <p class="blog-card__description">
-              В мире дизайна важен не только талант, но и правильные
-              инструменты. В этом посте мы собрали список незаменимых приложений
-              и утилит для UX/UI-дизайнеров, которые помогут ускорить процесс
-              разработки и улучшить качество пользовательского опыта. Узнайте,
-              какие инструменты рекомендуют профессионалы!
-            </p>
-            <p class="blog-card__date">18.11.2024</p>
-          </div>
-          <div class="blog-card">
-            <img
-              src="images/app-dev-mistakes.png"
-              alt="useful information"
-              class="blog-card__image"
-            />
-            <div class="blog-card__categories blog-card__categories--third">
-              <span class="blog-card__category">Про разработку</span>
-              <span class="blog-card__category">Полезные знания</span>
-            </div>
-            <h2 class="blog-card__subtitle">
-              10 ошибок при разработке приложений и как их избежать
-            </h2>
-            <p class="blog-card__description">
-              При разработке приложений легко столкнуться с распространенными
-              ошибками, которые могут негативно повлиять на успех проекта. В
-              этом посте мы собрали 10 основных ошибок, которые следует
-              избегать, и поделимся полезными советами, как защитить свой проект
-              и обеспечить его успех на рынке. Узнайте, как сделать ваше
-              приложение лучше!
-            </p>
-            <p class="blog-card__date">10.11.2024</p>
-          </div>
-
-          <div class="blog-card">
-            <img
-              src="images/new-achievements.png"
-              alt="useful information"
-              class="blog-card__image"
-            />
-            <div class="blog-card__categories">
-              <span class="blog-card__category">Новости компании</span>
-            </div>
-            <h2 class="blog-card__subtitle">
-              Новые достижения нашей команды: итоги квартала
-            </h2>
-            <p class="blog-card__description">
-              Мы рады поделиться с вами последними новостями из нашей компании!
-              В этом посте мы подведем итоги прошедшего квартала и расскажем о
-              наших больших достижениях. Наша команда успешно завершила
-              несколько важных проектов, внедрила новые технологии и расширила
-              клиентскую базу. Кроме того, мы провели несколько социальных
-              мероприятий и тренингов, направленных на развитие наших
-              сотрудников.
-            </p>
-            <p class="blog-card__date">31.10.2024</p>
-          </div>
+          <img
+            src="images/people-office.png"
+            alt="Сотрудники работают в офисе"
+            class="company-stats__image"
+          />
         </div>
       </section>
     </main>

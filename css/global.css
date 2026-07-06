@@ -42,6 +42,15 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+html {
+  overflow-y: scroll;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -49,6 +58,13 @@ body {
   font-size: var(--text-base);
   background-color: var(--color-white);
   line-height: 24px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 ul,
